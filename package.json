@@ -1,0 +1,42 @@
+{
+  "name": "dnd-table-roller",
+  "version": "0.0.1",
+  "description": "Shady's probablistic dnd roll generator",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./build/app.bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack --config webpack.config.js",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cosmonot1/dnd-table-roller.git"
+  },
+  "authors": [
+    "Zachary Shute <cosmonot1@gmail.com>",
+    "TARR-BOI"
+  ],
+  "contributors": [
+    "Thomas Hady"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cosmonot1/dnd-table-roller/issues"
+  },
+  "homepage": "https://github.com/cosmonot1/dnd-table-roller#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "prettier": "^1.18.2",
+    "webpack": "^4.41.1",
+    "webpack-cli": "^3.3.9"
+  }
+}
