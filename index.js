@@ -1,4 +1,5 @@
 import express from 'express';
+import routes from './routes';
 
 const PORT = 8000;
 
@@ -10,9 +11,7 @@ console.log('App created');
 
 console.log('Middleware loaded');
 
-app.get( '/', ( req, res ) => {
-  res.send( 'hello world' );
-} );
+app.use( '/', routes );
 
 console.log('Routes loaded');
 

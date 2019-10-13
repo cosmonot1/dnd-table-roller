@@ -1,4 +1,6 @@
 const path = require( 'path' );
+const HtmlWebpackPlugin = require( 'html-webpack-plugin' );
+
 module.exports = {
   target: 'node',
   mode: 'development',
@@ -15,11 +17,17 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: [ 'babel-preset-env' ]
+            presets: [ '@babel/preset-env', '@babel/preset-react' ]
           }
         },
       }
     ]
+  },
+  plugins: [
+    new HtmlWebpackPlugin( { template: path.resolve( __dirname, 'views', 'index.html' ) } )
+  ],
+  node: {
+    __dirname: true
   },
   stats: {
     colors: true
